@@ -11,7 +11,7 @@ spec:
   - host: vote.letsdevops.ml
     http:
       paths:
-      - path: /
+      - path: /*
         pathType: Prefix
         backend:
           serviceName: voting-service
@@ -20,7 +20,7 @@ spec:
   - host: result.letsdevops.ml
     http:
       paths:
-      - path: /
+      - path: /*
         pathType: Prefix
         backend:
           serviceName: result-service
