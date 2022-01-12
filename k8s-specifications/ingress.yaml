@@ -12,6 +12,7 @@ spec:
     http:
       paths:
       - path: /
+        pathType: Prefix 
         backend:
           serviceName: voting-service
           servicePort: 80
@@ -20,6 +21,7 @@ spec:
     http:
       paths:
       - path: /
+        pathType: Prefix
         backend:
           serviceName: result-service
           servicePort: 80
