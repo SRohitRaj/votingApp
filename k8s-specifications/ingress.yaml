@@ -14,8 +14,10 @@ spec:
       - path: /v1
         pathType: Exact
         backend:
-          serviceName: voting-service
-          servicePort: 80
+          service:
+            name: voting-service
+            port:
+              number: 80
 
   - host: result.letsdevops.ml
     http:
@@ -23,5 +25,7 @@ spec:
       - path: /v2
         pathType: Exact
         backend:
-          serviceName: result-service
-          servicePort: 80
+          service:
+            name: result-service
+            port:
+              number: 80
