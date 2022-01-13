@@ -8,7 +8,7 @@ metadata:
     ingress.kubernetes.io/app-root: "/"
 spec:
   rules:
-  - host: vote.letsdevops.ml
+  - host: myvote.letsdevops.ml
     http:
       paths:
       - path: /
@@ -19,7 +19,7 @@ spec:
             port:
               number: 80
 
-  - host: result.letsdevops.ml
+  - host: myresult.letsdevops.ml
     http:
       paths:
       - path: /
